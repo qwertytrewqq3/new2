@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="papa.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+
+
+    <header>
+        <div class="TravelHub">        
+        <img src="logo.png" alt="Лого">
+        <h1>TravelHub</h1>
+        </div>
+        <nav class="nav">
+            <a href="#">Главная</a>
+            <a href="#bb">Предложения</a>
+            <a href="#bbb">О нас</a>
+            <a href="#bbbb">Обратная связь</a>
+            <a href="#" id="openModal">FAQ</a>
+        </nav>
+    </header>
+<main>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>FAQ</h2>
+            <p id="text12">TravelHub – динамично развивающаяся компания – оператор на рынке услуг по организации индивидуальных и эксклюзивных групповых туров, работаем с июля 2003 года.<br><br>Наличие проверенных партнеров в более чем 120 странах мира позволяет нам организовывать туры любой сложности в любой конец света. Одним из главных приоритетов Компании является постоянное совершенствование качества оказываемых услуг. Для того, чтобы у Вас оставались только позитивные воспоминания о Ваших путешествиях, мы предъявляем очень высокие требования как к своему персоналу, так и к нашим партнерам в отношении соблюдения стандартов качества услуг.</p>
+        </div>
+    </div>
+
+    <div class="block1"> 
+        <h2 id="text1">Добро пожаловать<br>в нашу турфирму -<br> TravelHub!</h2>
+        <p id="text2">Мы рады предложить вам множество<br> вариантов путешествий по всему миру.<br> С нами ваши поездки будут яркими,<br> насыщенными и безопасными.<br> Наш опыт и профессионализм позволяют нам<br> создавать идеальные маршруты для каждого клиента.</p> 
+    </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  let currentImageIndex = 0;
+  const images = document.querySelectorAll(".slider-image");
+
+  // Скрыть все изображения, кроме первого
+  for (let i = 1; i < images.length; i++) {
+    images[i].style.display = "none";
+  }
+
+  function showNextImage() {
+    images[currentImageIndex].style.display = "none";
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    images[currentImageIndex].style.display = "block";
+  }
+
+  setInterval(showNextImage, 5000); // Смена каждые 5 секунд
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  let currentImageIndex = 0;
+  const images = document.querySelectorAll(".slider-image2");
+
+  // Скрыть все изображения, кроме первого
+  for (let i = 1; i < images.length; i++) {
+    images[i].style.display = "none";
+  }
+
+  function showNextImage() {
+    images[currentImageIndex].style.display = "none";
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    images[currentImageIndex].style.display = "block";
+  }
+
+  setInterval(showNextImage, 5000); 
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  let currentImageIndex = 0;
+  const images = document.querySelectorAll(".slider-image3");
+
+  // Скрыть все изображения, кроме первого
+  for (let i = 1; i < images.length; i++) {
+    images[i].style.display = "none";
+  }
+
+  function showNextImage() {
+    images[currentImageIndex].style.display = "none";
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    images[currentImageIndex].style.display = "block";
+  }
+
+  setInterval(showNextImage, 5000); 
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  let currentImageIndex = 0;
+  const images = document.querySelectorAll(".slider-image4");
+
+  // Скрыть все изображения, кроме первого
+  for (let i = 1; i < images.length; i++) {
+    images[i].style.display = "none";
+  }
+
+  function showNextImage() {
+    images[currentImageIndex].style.display = "none";
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    images[currentImageIndex].style.display = "block";
+  }
+
+  setInterval(showNextImage, 5000); 
+});
+
+</script>
+
+<script>
+  $(document).ready(function() {
+    setInterval(function() {
+      $(".content").fadeOut(200, function() {
+        $(this).fadeIn(200);
+      });
+    }, 5000);
+  });
+</script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#openModal").click(function() {
+        $("#myModal").css("display", "block");
+    });
+
+    $(".close").click(function() {
+        $("#myModal").css("display", "none");
+    });
+
+    $(window).click(function(event) {
+        if (event.target == $("#myModal")[0]) {
+            $("#myModal").css("display", "none");
+        }
+    });
+});
+</script>
+
+    <div class="block2" id="bb">
+        <h1 class="h1 content">Актуальные предложения</h1>
+        <div class="b2">
+
+            <div class="ph1">
+            <a href="" class="nourl">
+            <img src="Дагестан.jpg" class="image slider-image"  id="gg" alt="slider1">
+            <img src="Дагестан1.jpg" class="image slider-image"  id="gg" alt="slider2">
+            <img src="Дагестан2.jpg" class="image slider-image"  id="gg" alt="slider3">
+            <h4 class="blocktext">Дагестан<h4>
+            <p class="blocktext">55.000 ₽ - Неделя на двоих<p>
+            </a>
+            </div>
+
+            <div class="ph2">
+            <a href="" class="nourl">
+            <img src="Бали.jpg" class="image slider-image2" id="gg" alt="slider1">
+            <img src="Бали1.jpg" class="image slider-image2" id="gg" alt="slider2">
+            <img src="Бали2.jpg" class="image slider-image2" id="gg" alt="slider2">
+            <h4 class="blocktext">Бали<h4>
+            <p class="blocktext">180.000 ₽ - Неделя на двоих<p>
+            </a>
+            </div>
+
+            <div class="ph3">
+            <a href="" class="nourl">
+            <img src="Норвегия.jpg" class="image slider-image3" id="gg" alt="slider1">
+            <img src="Норвегия1.jpg" class="image slider-image3" id="gg" alt="slider2">
+            <img src="Норвегия2.jpg" class="image slider-image3" id="gg" alt="slider3">
+            <h4 class="blocktext">Норвегия<h4>
+            <p class="blocktext">120.000 ₽ - Неделя на двоих<p>
+            </a>
+            </div>
+
+            <div class="ph4">
+            <a href="" class="nourl">
+            <img src="Тайланд.jpg" class="image slider-image4" id="gg" alt="slider1">
+            <img src="Тайланд1.jpg" class="image slider-image4" id="gg" alt="slider2">
+            <img src="Тайланд2.jpg" class="image slider-image4" id="gg" alt="slider3">
+            <h4 class="blocktext">Тайланд<h4>
+            <p class="blocktext">100.000 ₽ - Неделя на двоих<p>
+            </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="block3" id="bbb">
+        <h2 id="Otz">Почему выбирают именно нас?</h2>
+       
+        <div class="b2">
+
+            <div class="pr1">
+            <img src="pr1.png" class="image2">
+            <h4 class="blocktext2">Опытные гиды<h4>
+            </div>
+
+            <div class="pr2">
+            <img src="pr2.png" class="image2">
+            <h4 class="blocktext2">Широкий выбор направлений<h4>
+            </div>
+
+            <div class="pr3">
+            <img src="pr3.png" class="image2">
+            <h4 class="blocktext2">Надежность и безопасность<h4>
+            </div>
+
+            <div class="pr4">
+            <img src="pr4.png" class="image2">
+            <h4 class="blocktext2">Выгодная цена<h4>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="block4" id="bbbb">
+        <h2>Обратная связь</h2>
+        <form action="обработчик.php" method="post">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Почта:</label>
+            <input type="email" id="email" name="email" required>
+             
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" rows="3" required></textarea>
+                
+            <button type="submit">Отправить</button>
+        </form>
+        </div>
+</main>
+
+    <footer>
+
+    <div class="container">
+        <div class="textfoot">
+            <p>Наши социальные сети</p>
+        </div>
+        <div class="imagfoot">
+            <img src="sot.png" id="imgf">
+        </div>
+    </div>
+        <div class="footer">
+           <h2>&copy; TravelHub</h2>
+        </div>
+    </footer>
+</body>
+</html>
